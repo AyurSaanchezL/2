@@ -12,9 +12,13 @@
             height: 100vh;
         }
         img{
-            width: 20%;
-            height: 20%;
-            margin-top: 40%;
+            width: 270px;
+            margin-top: 120%;
+            rotate: -45deg;
+        }
+        source{
+            width: 270px;
+            margin-top: 120%;
             rotate: -45deg;
         }
         .vaso{
@@ -53,8 +57,8 @@
             border-radius: 100%;
             box-sizing: border-box;
             margin-right: 1.5px;
-            top: 44%;
-            right: 40%;
+            top: 42%;
+            right: 50%;
             position: absolute;
         }
 
@@ -76,6 +80,9 @@
         </div>
     </div>
     <div class="agua"></div>
-    <img src="agua.png" alt="Botella de agua">
+    <picture>
+        <source media="(min-width: 60px)" srcset="agua.png">
+        <img src="agua.png" alt="agua">
+    </picture>
 </body>
 </html>
