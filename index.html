@@ -12,8 +12,8 @@
             height: 100vh;
         }
         img{
-            width: 50%;
-            margin-top: 65%;
+            width: 270px;
+            margin-top: 120%;
             rotate: -45deg;
         }
         source{
@@ -49,6 +49,11 @@
             justify-content: center;
             align-items: end;
         }
+        .botella{
+            display: flex;
+            justify-content: left;
+            align-content: initial;
+        }
         .agua{
             animation: caida_gota ease-in-out 1s infinite;
             background: aquamarine;
@@ -56,15 +61,12 @@
             height: 20px;
             border-radius: 100%;
             box-sizing: border-box;
-            margin-right: 1.5px;
-            top: 42%;
-            right: 50%;
-            position: absolute;
+            margin-left: 30px;
         }
 
         @keyframes caida_gota {
             0%{
-                transform: translateY(0px);
+                transform: translateY(-210px);
             }
             100%{
                 transform: translateY(200px);
@@ -79,10 +81,12 @@
             </div>
         </div>
     </div>
-    <div class="agua"></div>
-    <picture>
-        <source media="(min-width: 60px)" srcset="agua.png">
-        <img src="agua.png" alt="agua">
-    </picture>
+    <div class="botella">
+        <picture>
+            <source media="(min-width: 60px)" srcset="agua.png">
+            <img src="agua.png" alt="agua">
+            <div class="agua"></div>
+        </picture>
+    </div>
 </body>
 </html>
